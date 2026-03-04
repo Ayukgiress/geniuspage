@@ -1,11 +1,43 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import TrustBadges from '../components/TrustBadges.astro';
+import Stats from '../components/Stats.astro';
+import Features from '../components/Features.astro';
+import Benefits from '../components/Benefits.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import Pricing from '../components/Pricing.astro';
+import Testimonials from '../components/Testimonials.astro';
+import FAQ from '../components/FAQ.astro';
+import CTA from '../components/CTA.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<Navbar />
+	<main class="bg-black">
+		<Hero />
+		<TrustBadges />
+		<Stats />
+		<Features />
+		<Benefits />
+		<CTA 
+			title="Ready to transform your career?"
+			subtitle="Get AI-powered insights to optimize your resume and land your dream job."
+			primaryCta="Start Free Trial"
+			secondaryCta="Contact Sales"
+		/>
+		<HowItWorks />
+		<Pricing />
+		<Testimonials />
+		<FAQ />
+		<CTA 
+			title="Ready to take the next step in your career?"
+			subtitle="Join thousands of job seekers using AI to navigate the modern job market."
+			primaryCta="Start Your Career Journey"
+			secondaryCta="Book a Demo"
+		/>
+	</main>
+	<Footer />
 </Layout>

@@ -1,0 +1,55 @@
+---
+const benefits = [
+  {
+    title: "ATS Optimization",
+    description: "Our AI ensures your resume passes through Applicant Tracking Systems with flying colors, increasing your chances of reaching human recruiters."
+  },
+  {
+    title: "Real-time Notifications",
+    description: "Stay informed with instant alerts about new job postings matching your profile, application status updates, and interview reminders."
+  },
+  {
+    title: "Cover Letter Generator",
+    description: "Create compelling, personalized cover letters in seconds. Our AI analyzes job descriptions to craft the perfect narrative for each application."
+  },
+  {
+    title: "Interview Prep",
+    description: "Practice with AI-generated questions tailored to your target role. Get instant feedback on your answers and improve your confidence."
+  },
+  {
+    title: "Salary Insights",
+    description: "Access real-time salary data for your role and location. Know your worth and negotiate with confidence using data-driven insights."
+  },
+  {
+    title: "Application Analytics",
+    description: "Track your job search progress with detailed analytics. Identify patterns, optimize your strategy, and measure your success over time."
+  }
+];
+---
+
+<section class="py-24 bg-black">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6 tracking-tight text-white">Why Choose Us</h2>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+        Everything you need to accelerate your job search and land your dream role faster.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {benefits.map((benefit) => (
+        <div class="bg-zinc-900/30 border border-white/5 p-8 rounded-2xl hover:bg-zinc-900/50 hover:border-emerald-500/30 transition-all duration-300">
+          <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-white">{benefit.title}</h3>
+          <p class="text-gray-400 leading-relaxed text-sm md:text-base">
+            {benefit.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
